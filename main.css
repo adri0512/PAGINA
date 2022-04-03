@@ -1,0 +1,173 @@
+body {
+  margin: 0em;
+  /*background-image: linear-gradient(#3d3934, rgb(197, 159, 140) );*/
+  font-family: 'Arvo', serif;
+}
+h1,h2,h3,h4,h5 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.cover {
+  height: 450px;
+  /*background: radial-gradient(#0B6138,#1C1C1C); para el degradado*/
+  background-image: url(portada.jpg);
+  color: rgb(14, 13, 13);
+  background-size: cover; /*redimenciona la imagen*/
+  color: rgba(248, 246, 246, 0.726); /*color de la letra*/
+  background-position: center;
+  background-color: rgba(75, 62, 62, 0.767);
+  background-blend-mode: darken;
+}
+
+
+/*.cover-small { /*tamaño de la tarjetita (card)
+  height: 200px;
+  background-blend-mode: normal;
+  
+*/
+/*
+.card {
+  border: 0 important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.918),
+    0 2px 4px -1px rgba(0, 0, 0, 0.938); /*Valores para la sombra
+*/
+
+/*
+.card-title {
+  min-height: 3rem;
+}
+.card-text {
+  min-height: 10rem;
+}
+
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+  background: #000000;
+}
+
+.wrap{
+	width: 1100px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.tarjeta-wrap{
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
+}
+
+.tarjeta{
+	width: 300px;
+	height: 350px;
+	background: #5a5c0a; /* color del reverso de la tarjeta*/
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(94, 84, 84, 0.65);
+	box-shadow: 0px 10px 15px -5px rgba(31, 26, 26, 0.65);
+
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: rgb(247, 247, 247); /*color de la letra*/
+	font-family: "open sans";
+  background: #a86828; /*color de la tarjeta*/
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(once.jpg);
+  
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(doce.jpg);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(seis.jpg);
+	background-size: cover;
+}
+.card4{
+	background-image: url(quince.jpg);
+  
+	background-size: cover;
+}
+
+.card5{
+	background-image: url(siete.jpg);
+	background-size: cover;
+}
+
+.card6{
+	background-image: url(diez.jpg);
+	background-size: cover ;
+}
+
+
+.footer { /*para el pie de pagina*/
+  width: 100%;
+  height: 80px;
+  background-color: #1d1b1bf3;
+  color: #FFF;
+  margin-top: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  }
